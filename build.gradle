@@ -32,6 +32,10 @@ bootBuildImage {
     imageName = 'docker.io/deepscape/catalog-service:0.0.1-SNAPSHOT'
 }
 
+bootRun {
+    systemProperty 'spring.profiles.active', 'testdata'
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
