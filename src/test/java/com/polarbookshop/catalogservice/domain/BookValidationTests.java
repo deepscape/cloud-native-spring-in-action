@@ -1,6 +1,5 @@
 package com.polarbookshop.catalogservice.domain;
 
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -39,6 +38,5 @@ class BookValidationTests {
         // 첫 번째 유효성 검사 오류의 메시지가 예상한 대로 "The ISBN format must be valid."인지 확인
         assertThat(violations.iterator().next().getMessage()).isEqualTo("The ISBN format must be valid.");
     }
-
 
 }
